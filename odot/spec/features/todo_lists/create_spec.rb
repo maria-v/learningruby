@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "Creating todo lists" do 
-	def create_todo_list(options={})
+describe "Creating todo lists" do
+	def create_todo_list( options={} )
 		options[:title] ||= "My todo list"
-		options[:description] ||= "This is my todo list" 
+		options[:description] ||= "This is my todo list"
 
 		visit "/todo_lists"
 		click_link "New Todo list"

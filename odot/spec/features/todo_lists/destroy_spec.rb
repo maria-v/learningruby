@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "Deleting todo list" do
-	let!(:todo_list){ 
+	let!(:todo_list){
 		TodoList.create(title: "Grocery list", description: "This is my grocery list")
 	}
 
