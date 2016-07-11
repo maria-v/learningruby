@@ -22,6 +22,7 @@ ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
   config.include TodoListHelpers, type: :feature
+  config.include RailsDomIdHelper, type: :feature
   # config.raise_errors_for_deprecations!
   # ## Mock Framework
   #
