@@ -23,10 +23,9 @@ describe 'Viewing todo items' do
 	end
 
 	it "displays item content when a todo list has items" do
-
-		todo_list.todo_items.create(content: "Eggs")
 		todo_list.todo_items.create(content: "Milk")
-		
+		todo_list.todo_items.create(content: "Eggs")
+
 		visit_todo_list(todo_list)
 
 		expect(page.all("ul.todo_items li").size).to eq(2)
